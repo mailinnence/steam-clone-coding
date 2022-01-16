@@ -1,0 +1,19 @@
+create database steam;
+
+use steam;
+
+create table users (
+  num int not null auto_increment,
+  user  char(20) not null,
+  password char(90)  ,
+  name char(10) ,
+gender char(10) ,
+phone_num char(30) ,
+address char(30) ,
+age int,
+point int, 
+regist_day char(30) ,
+failed_login int(30),
+last_login timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  primary key(num)
+  )  ;
